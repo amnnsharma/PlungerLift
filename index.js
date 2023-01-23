@@ -111,22 +111,3 @@ document.getElementById("Reset").addEventListener("click", ()=>{
 })
 
 
-document.getElementById("contactform").addEventListener("click",()=>{
-    console.log("Hi")
-    let name=document.getElementById("inputName").value;
-    let email=document.getElementById("inputEmail").value;
-    let query1=document.getElementById("textarea").value;
-    document.getElementById("inputName").value=""
-    document.getElementById("inputEmail").value=""
-    document.getElementById("textarea").value=""
-    Email.send({
-        Host:"smtp.gmail.com",
-        Username:'itsaurabh@csjmu.ac.in',
-        Password:"axlhhpplgandaycf",
-        To:'amnnsharma@gmail.com',
-        From:'itsaurabh@csjmu.ac.in',
-        Subject:`${name} sent you a message`,
-        Body:`Name: ${name} <br/> Email: ${email} <br/> Message: ${query1}`,
-    }).then((message) => alert("mail sent successfully"));
-
-})

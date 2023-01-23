@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="/img/icon.png">
+    <title>Plunger Lift</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" class="navbar bg-dark" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Plunger Lift Design</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="/index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about.html">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Calculators
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item active" href="/static.html">Static</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Dynamic</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact.html">Contact Us</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="col-sm-12 container my-4">
+
+                    <div class="row mb-1 mr-0">
+                        <label for="input1" class="col-sm-8 ">OD of the production tubing in
+                            inches(Dec):</label>
+                        <div class="col-sm-4">
+                            <input type="number" placeholder="2.375" step="0.01" class="text-primary form-control bg-light" id="input1">
+                        </div>
+                    </div>
+
+                    <div class="row mb-1">
+                        <label for="input2" class="col-sm-8 col-form-label">ID of the production tubing in
+                            inches(Dip):</label>
+                        <div class="col-sm-4 ">
+                            <input type="number" placeholder="1.995"  step="0.01" class="text-primary form-control bg-light" id="input2">
+                        </div>
+                    </div>
+
+                    <div class="row mb-1">
+                        <label for="input3" class="col-sm-8 col-form-label">Slug volume in bbl(Vslug):</label>
+                        <div class="col-sm-4 ">
+                            <input type="number" placeholder="1" step="0.01" class="text-primary form-control bg-light" id="input3">
+                        </div>
+                    </div>
+
+                    <div class="row mb-1">
+                        <label for="input4" class="col-sm-8 col-form-label">Plunger weight in Ibf(Wp):</label>
+                        <div class="col-sm-4 my">
+                            <input type="number" placeholder="10" step="0.01" class="text-primary form-control bg-light" id="input4">
+                        </div>
+                    </div>
+
+                    <div class="row mb-1">
+                        <label for="input5" class="col-sm-8 col-form-label">Depth of plunger in ft(D):</label>
+                        <div class="col-sm-4 my">
+                            <input type="number" placeholder="7000" step="0.01" class="text-primary form-control bg-light" id="input5">
+                        </div>
+                    </div>
+
+                    <div class="row mb-1">
+                        <label for="input6" class="col-sm-8 col-form-label">Tubing head pressure in psia(Pt):</label>
+                        <div class="col-sm-4 my">
+                            <input type="number" placeholder="100" step="0.01" class="text-primary form-control bg-light" id="input6">
+                        </div>
+                    </div>
+
+                    <div class="row mb-1">
+                        <label for="input7" class="col-sm-8 col-form-label">Inner diameter of the casing in
+                            inches(Dic):</label>
+                        <div class="col-sm-4 my">
+                            <input type="number" placeholder="4.56" step="0.01" class="text-primary form-control bg-light" id="input7">
+                        </div>
+                    </div>
+
+                    <div class="row mb-1">
+                        <label for="input8" class="col-sm-8 col-form-label">Plunger rising velocity in
+                            ft/min(Vr):</label>
+                        <div class="col-sm-4 my">
+                            <input type="number" placeholder="1000 " step="0.01" class="text-primary form-control bg-light" id="input8">
+                        </div>
+                    </div>
+
+                    <div class="row mb-1">
+                        <label for="input9" class="col-sm-8 col-form-label">Plunger falling velocity in gas in
+                            ft/min(Vfg):</label>
+                        <div class="col-sm-4">
+                            <input type="number" placeholder="750" step="0.01" class="text-primary form-control bg-light" id="input9">
+                        </div>
+                    </div>
+
+                    <div class="row mb-1">
+                        <label for="input10" class="col-sm-8 col-form-label">Falling velocity in liquid in
+                            ft/min(Vfl):</label>
+                        <div class="col-sm-4">
+                            <input type="number" placeholder="150" step="0.01" class="text-primary form-control bg-light" id="input10">
+                        </div>
+                    </div>
+
+                    <div class="row mb-1">
+                        <label for="input11" class="col-sm-8 col-form-label">Liquid gradient in psi/ft(Yl):</label>
+                        <div class="col-sm-4">
+                            <input type="number" placeholder="0.43" step="0.01" class="text-primary form-control bg-light" id="input11">
+                        </div>
+                    </div>
+
+                    <div class="row mb-1">
+                        <label for="input12" class="col-sm-8 col-form-label">Density of liquid in lb/ft3(p):</label>
+                        <div class="col-sm-4">
+                            <input type="number" placeholder="62.4" step="0.01" class="text-primary form-control bg-light" id="input12">
+                        </div>
+                    </div>
+
+                    <div class="row mb-1">
+                        <label for="input13" class="col-sm-8 col-form-label">Viscosity of liquid in lbft/sec(v):</label>
+                        <div class="col-sm-4">
+                            <input type="number" placeholder="0.000672" step="0.01" class="text-primary form-control bg-light" id="input13">
+                        </div>
+                    </div>
+
+                    <div class="row mb-1">
+                        <label for="input14" class="col-sm-8 col-form-label">Relative roughness(e)</label>
+                        <div class="col-sm-4">
+                            <input type="number" placeholder="0.0006" step="0.01" class="text-primary form-control bg-light" id="input14">
+                        </div>
+                    </div>
+
+
+                    <div class="container" style="padding-right: 0%;">
+                        <div class="d-flex justify-content-around">
+                            <div class="p-2 d-flex justify-content-between">
+                                <button type="submit" class="btn btn-primary" id="calc1">
+                                    <h4>Calculate</h4>
+                                </button>
+                            </div>
+                            <div class="p-2 d-flex justify-content-between mx-4">
+                                <button type="submit" class="btn btn-primary" id="Reset">
+                                    <h4>Reset</h4>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-sm-6 my-4 ">
+
+                <label id="output1" class="col-form-label"></label>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
